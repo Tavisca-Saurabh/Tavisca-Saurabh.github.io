@@ -180,12 +180,12 @@
             <tbody>
                 <tr>
                     <td class="col-md-4">
-<code>constructor(componentdata: <a href="../injectables/ComponentService.html">ComponentService</a>, router: <a href="https://angular.io/api/router/Router" target="_blank">Router</a>)</code>
+<code>constructor(componentdata: <a href="../injectables/ComponentService.html">ComponentService</a>)</code>
                     </td>
                 </tr>
                         <tr>
                             <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="11" class="link-to-prism">src/app/main/description/description.component.ts:11</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="10" class="link-to-prism">src/app/main/description/description.component.ts:10</a></div>
                             </td>
                         </tr>
 
@@ -207,18 +207,6 @@
                                                   
                                                         <td>
                                                                     <code><a href="../injectables/ComponentService.html" target="_self" >ComponentService</a></code>
-                                                        </td>
-                                                  
-                                                    <td>
-                                                            No
-                                                    </td>
-                                                    
-                                                </tr>
-                                                <tr>
-                                                        <td>router</td>
-                                                  
-                                                        <td>
-                                                                    <code><a href="https://angular.io/api/router/Router" target="_blank" >Router</a></code>
                                                         </td>
                                                   
                                                     <td>
@@ -256,7 +244,7 @@
                 </tr>
                         <tr>
                             <td class="col-md-2" colspan="2">
-                                    <div class="io-line">Defined in <a href="" data-line="11" class="link-to-prism">src/app/main/description/description.component.ts:11</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="10" class="link-to-prism">src/app/main/description/description.component.ts:10</a></div>
                             </td>
                         </tr>
             </tbody>
@@ -292,7 +280,7 @@
 
                         <tr>
                             <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="19" class="link-to-prism">src/app/main/description/description.component.ts:19</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="13" class="link-to-prism">src/app/main/description/description.component.ts:13</a></div>
                             </td>
                         </tr>
 
@@ -343,7 +331,7 @@
                     </tr>
                         <tr>
                             <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="12" class="link-to-prism">src/app/main/description/description.component.ts:12</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="11" class="link-to-prism">src/app/main/description/description.component.ts:11</a></div>
                             </td>
                         </tr>
 
@@ -358,7 +346,6 @@
     <div class="tab-pane fade  tab-source-code" id="c-source">
         <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, OnInit, Input } from &#x27;@angular/core&#x27;;
 import { ComponentService } from &#x27;src/app/component.service&#x27;;
-import { ActivatedRoute, Router } from &#x27;@angular/router&#x27;;
 
 @Component({
   selector: &#x27;app-description&#x27;,
@@ -367,15 +354,9 @@ import { ActivatedRoute, Router } from &#x27;@angular/router&#x27;;
 })
 export class DescriptionComponent implements OnInit {
   @Input() Component: string &#x3D; null;
-  constructor(public componentdata: ComponentService, private router: Router) {
-
-    // setTimeout(() &#x3D;&gt; {
-    //   console.log(this.router.url.substring(1,this.router.url.length));
-    // }, 1000);
-  }
+  constructor(public componentdata: ComponentService) {}
 
   ngOnInit() { }
-  //ngOnChanges(){console.log(this.Component);}
 
 }
 </code></pre>
@@ -524,8 +505,8 @@ export class DescriptionComponent implements OnInit {
 <script src="../js/libs/deep-iterator.js"></script>
 <script>
         var COMPONENT_TEMPLATE = '<div><div *ngFor="let data of componentdata.response">  <div *ngIf="Component==data.ComponentName">    <div class="row">      <div class="codepen">         <app-codepen></app-codepen>      </div>      <div class="operation">        <mat-card>          <b>Description: </b>{{data.Description}}        </mat-card>        <mat-card>          <h3>Operations:</h3>          <mat-list role="list" *ngFor="let operation of data.Properties">              <mat-list-item role="listitem"  *ngIf="operation.value==\'String\'">              <mat-form-field class="form-full-width">                  <input matInput placeholder="Label" value={{operation.label}}>                </mat-form-field>              </mat-list-item>            <mat-list-item role="listitem" *ngIf="operation.value==\'Boolean\'">              <mat-checkbox>{{operation.label}}</mat-checkbox>            </mat-list-item>          </mat-list>          <mat-list role="list" *ngIf="!data.Properties">            <mat-list-item role="listitem" *ngIf="!data.Properties">              Operations Not Found Please Add in Json File.            </mat-list-item>          </mat-list>        </mat-card>        <mat-card *ngIf="data.CodeUrl">            <mat-chip-list>                <b>Code: </b>                <a mat-list-item class="github" href="{{data.CodeUrl}}" target="_blank"><mat-chip color="accent" selected><mat-icon aria-label="Github Icon">code</mat-icon> Github</mat-chip>             </a></mat-chip-list>          </mat-card>        <!-- <mat-card>            <h3>Input Operations</h3>            <div  *ngFor="let operation of data.Properties">          <mat-form-field class="form-full-width"  *ngIf="operation.value==\'String\'">            <input matInput placeholder="Label" value={{operation.label}}>          </mat-form-field>        </div>          <mat-list role="list" *ngIf="operation.value!=\'String\'">            <mat-list-item role="listitem" *ngIf="!data.Properties">              Input Not Found Please Add in Json File.            </mat-list-item>          </mat-list>        </mat-card> -->      </div>    </div>  </div></div></div>'
-    var COMPONENTS = [{'name': 'ApiComponent', 'selector': 'app-api'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'CodepenComponent', 'selector': 'app-codepen'},{'name': 'ComponentsComponent', 'selector': 'app-components'},{'name': 'DescriptionComponent', 'selector': 'app-description'},{'name': 'FooterComponent', 'selector': 'app-footer'},{'name': 'HeaderComponent', 'selector': 'app-header'},{'name': 'MainComponent', 'selector': 'app-main'}];
-    var DIRECTIVES = [];
+    var COMPONENTS = [{'name': 'ApiComponent', 'selector': 'app-api'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'CodepenComponent', 'selector': 'app-codepen'},{'name': 'ComponentsComponent', 'selector': 'app-components'},{'name': 'DefualtAMButtonComponent', 'selector': 'app-defualt-ambutton'},{'name': 'DefualtAMMenuListComponent', 'selector': 'app-defualt-ammenu-list'},{'name': 'DemoComponent', 'selector': 'app-demo'},{'name': 'DescriptionComponent', 'selector': 'app-description'},{'name': 'FooterComponent', 'selector': 'app-footer'},{'name': 'HeaderComponent', 'selector': 'app-header'},{'name': 'MainComponent', 'selector': 'app-main'},{'name': 'OverviewComponent', 'selector': 'app-overview'},{'name': 'TaviscaButtonComponent', 'selector': 'enl-tavisca-button'}];
+    var DIRECTIVES = [{'name': 'ComponentLoaderDirective', 'selector': '[appComponentLoader]'}];
     var ACTUAL_COMPONENT = {'name': 'DescriptionComponent'};
 </script>
 <script src="../js/tree.js"></script>

@@ -35,7 +35,7 @@
 
 <ol class="breadcrumb">
   <li>Components</li>
-  <li>CodepenComponent</li>
+  <li>DefualtAMButtonComponent</li>
 </ol>
 
 <ul class="nav nav-tabs" role="tablist">
@@ -61,7 +61,7 @@
     <h3>File</h3>
 </p>
 <p class="comment">
-    <code>src/app/main/description/codepen/codepen.component.ts</code>
+    <code>src/app/customiseComponents/defualt-ambutton/defualt-ambutton.component.ts</code>
 </p>
 
 
@@ -91,19 +91,19 @@
 
             <tr>
                 <td class="col-md-3">selector</td>
-                <td class="col-md-9"><code>app-codepen</code></td>
+                <td class="col-md-9"><code>app-defualt-ambutton</code></td>
             </tr>
 
             <tr>
                 <td class="col-md-3">styleUrls</td>
-                <td class="col-md-9"><code>./codepen.component.css</code></td>
+                <td class="col-md-9"><code>./defualt-ambutton.component.css</code></td>
             </tr>
 
 
 
             <tr>
                 <td class="col-md-3">templateUrl</td>
-                <td class="col-md-9"><code>./codepen.component.html</code></td>
+                <td class="col-md-9"><code>./defualt-ambutton.component.html</code></td>
             </tr>
 
 
@@ -156,7 +156,7 @@
                 </tr>
                         <tr>
                             <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="8" class="link-to-prism">src/app/main/description/codepen/codepen.component.ts:8</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="8" class="link-to-prism">src/app/customiseComponents/defualt-ambutton/defualt-ambutton.component.ts:8</a></div>
                             </td>
                         </tr>
 
@@ -195,7 +195,7 @@
 
                         <tr>
                             <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="12" class="link-to-prism">src/app/main/description/codepen/codepen.component.ts:12</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="12" class="link-to-prism">src/app/customiseComponents/defualt-ambutton/defualt-ambutton.component.ts:12</a></div>
                             </td>
                         </tr>
 
@@ -221,11 +221,11 @@
         <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, OnInit } from &#x27;@angular/core&#x27;;
 
 @Component({
-  selector: &#x27;app-codepen&#x27;,
-  templateUrl: &#x27;./codepen.component.html&#x27;,
-  styleUrls: [&#x27;./codepen.component.css&#x27;]
+  selector: &#x27;app-defualt-ambutton&#x27;,
+  templateUrl: &#x27;./defualt-ambutton.component.html&#x27;,
+  styleUrls: [&#x27;./defualt-ambutton.component.css&#x27;]
 })
-export class CodepenComponent implements OnInit {
+export class DefualtAMButtonComponent implements OnInit {
 
   constructor() { }
 
@@ -237,114 +237,14 @@ export class CodepenComponent implements OnInit {
     </div>
 
     <div class="tab-pane fade " id="c-templateData">
-        <pre class="line-numbers"><code class="language-html">&lt;!-- &lt;div class&#x3D;&quot;expansion&quot;&gt;
-    &lt;mat-accordion class&#x3D;&quot;example-headers-align&quot;&gt;
-      &lt;mat-expansion-panel hideToggle&gt;
-        &lt;mat-expansion-panel-header&gt;
-          &lt;mat-panel-title&gt;
-           Buttons
-          &lt;/mat-panel-title&gt;
-          &lt;mat-panel-description&gt;
-            Detail About Buttons
-            &lt;mat-icon&gt;code&lt;/mat-icon&gt;
-          &lt;/mat-panel-description&gt;
-        &lt;/mat-expansion-panel-header&gt;
-        &lt;mat-card-content&gt;
-            &lt;mat-tab-group&gt;
-                &lt;mat-tab&gt;
-                  &lt;ng-template mat-tab-label&gt;
-                    HTML
-                  &lt;/ng-template&gt;
-                      &amp;lt;button mat-raised-button color&#x3D;&quot;warn&quot;&amp;gt;Input 
-                      &amp;lt;/button&amp;gt;      
-                &lt;/mat-tab&gt;
-              
-                &lt;mat-tab&gt;
-                  &lt;ng-template mat-tab-label&gt;
-                    TS
-                  &lt;/ng-template&gt;
-                  import Component from &#x27;@angular/core&#x27;;
-                &lt;/mat-tab&gt;
-                &lt;mat-tab&gt;
-                    &lt;ng-template mat-tab-label&gt;
-                      CSS
-                    &lt;/ng-template&gt;
-                    .mat-raised-button
-                      margin-top: 2em;
-                      width: 150px;
-                    
-                  &lt;/mat-tab&gt;
-              &lt;/mat-tab-group&gt;
-        &lt;/mat-card-content&gt;
-      &lt;/mat-expansion-panel&gt;
-    &lt;/mat-accordion&gt;
-  &lt;/div&gt; --&gt;
-  &lt;mat-card&gt;
-      &lt;mat-chip-list&gt;
-          &lt;mat-chip&gt; &lt;mat-icon mat-list-icon&gt;label_important&lt;/mat-icon&gt; Button Component&lt;/mat-chip&gt;
-          &lt;!-- &lt;mat-chip color&#x3D;&quot;warn&quot; selected&gt;&lt;mat-icon mat-list-icon&gt;label_important&lt;/mat-icon&gt; Button Component&lt;/mat-chip&gt;
-          &lt;mat-chip color&#x3D;&quot;primary&quot; selected&gt;&lt;mat-icon mat-list-icon&gt;label_important&lt;/mat-icon&gt; Button Component&lt;/mat-chip&gt;
-          &lt;mat-chip color&#x3D;&quot;accent&quot; selected&gt;&lt;mat-icon mat-list-icon&gt;label_important&lt;/mat-icon&gt; Button Component&lt;/mat-chip&gt; --&gt;
-        &lt;/mat-chip-list&gt;
-    &lt;/mat-card&gt;
-  &lt;mat-card class&#x3D;&quot;example-card&quot;&gt;
-    &lt;mat-card-content&gt;
-        &lt;button mat-raised-button color&#x3D;&quot;warn&quot;&gt;Click Me&lt;/button&gt;
-        &lt;!-- &lt;mat-tab-group&gt;
-            &lt;mat-tab&gt;
-              &lt;ng-template mat-tab-label&gt;
-                Desktop View
-              &lt;/ng-template&gt;
-              &lt;button mat-raised-button color&#x3D;&quot;warn&quot;&gt;Input&lt;/button&gt;
-            &lt;/mat-tab&gt;
-          
-            &lt;mat-tab&gt;
-              &lt;ng-template mat-tab-label&gt;
-                Mobile View
-              &lt;/ng-template&gt;
-              &lt;button mat-raised-button color&#x3D;&quot;warn&quot;&gt;Input&lt;/button&gt;
-            &lt;/mat-tab&gt;
-          &lt;/mat-tab-group&gt; --&gt;
-    &lt;/mat-card-content&gt;
-  &lt;/mat-card&gt;
-  
-</code></pre>
+        <pre class="line-numbers"><code class="language-html">&lt;button mat-raised-button color&#x3D;&quot;primary&quot;&gt;Primary&lt;/button&gt;</code></pre>
     </div>
 
     <div class="tab-pane fade " id="c-styleData">
                 <p class="comment">
-                    <code>./codepen.component.css</code>
+                    <code>./defualt-ambutton.component.css</code>
                 </p>
-                <pre class="line-numbers"><code class="language-scss"> .example-card {
-   margin-top: 5em !important;
-    margin: 0 auto;
-    max-width: 500px;
-  } 
-
-.example-headers-align .mat-expansion-panel-header-title,
-.example-headers-align .mat-expansion-panel-header-description {
-  flex-basis: 0;
-}
-
-.example-headers-align .mat-expansion-panel-header-description {
-  justify-content: space-between;
-  align-items: center;
-}
-/* .expansion{
-    margin: 0 auto !important;
-    max-width: 532px;
-} */
-.mat-raised-button{
-    margin-top: 2em;
-    width: 150px;
-  }
-  mat-card-content{
-      height: 8em;
-     text-align: center;
-  }
-  mat-chip {
-    max-width: 200px;
-  }</code></pre>
+                <pre class="line-numbers"><code class="language-scss"></code></pre>
     </div>
 
     <div class="tab-pane fade " id="c-tree">
@@ -372,10 +272,10 @@ export class CodepenComponent implements OnInit {
 <script src="../js/libs/htmlparser.js"></script>
 <script src="../js/libs/deep-iterator.js"></script>
 <script>
-        var COMPONENT_TEMPLATE = '<div><!-- <div class="expansion">    <mat-accordion class="example-headers-align">      <mat-expansion-panel hideToggle>        <mat-expansion-panel-header>          <mat-panel-title>           Buttons          </mat-panel-title>          <mat-panel-description>            Detail About Buttons            <mat-icon>code</mat-icon>          </mat-panel-description>        </mat-expansion-panel-header>        <mat-card-content>            <mat-tab-group>                <mat-tab>                  <ng-template mat-tab-label>                    HTML                  </ng-template>                      &lt;button mat-raised-button color="warn"&gt;Input                       &lt;/button&gt;                      </mat-tab>                              <mat-tab>                  <ng-template mat-tab-label>                    TS                  </ng-template>                  import Component from \'@angular/core\';                </mat-tab>                <mat-tab>                    <ng-template mat-tab-label>                      CSS                    </ng-template>                    .mat-raised-button                      margin-top: 2em;                      width: 150px;                                      </mat-tab>              </mat-tab-group>        </mat-card-content>      </mat-expansion-panel>    </mat-accordion>  </div> -->  <mat-card>      <mat-chip-list>          <mat-chip> <mat-icon mat-list-icon>label_important</mat-icon> Button Component</mat-chip>          <!-- <mat-chip color="warn" selected><mat-icon mat-list-icon>label_important</mat-icon> Button Component</mat-chip>          <mat-chip color="primary" selected><mat-icon mat-list-icon>label_important</mat-icon> Button Component</mat-chip>          <mat-chip color="accent" selected><mat-icon mat-list-icon>label_important</mat-icon> Button Component</mat-chip> -->        </mat-chip-list>    </mat-card>  <mat-card class="example-card">    <mat-card-content>        <button mat-raised-button color="warn">Click Me</button>        <!-- <mat-tab-group>            <mat-tab>              <ng-template mat-tab-label>                Desktop View              </ng-template>              <button mat-raised-button color="warn">Input</button>            </mat-tab>                      <mat-tab>              <ng-template mat-tab-label>                Mobile View              </ng-template>              <button mat-raised-button color="warn">Input</button>            </mat-tab>          </mat-tab-group> -->    </mat-card-content>  </mat-card>  </div>'
+        var COMPONENT_TEMPLATE = '<div><button mat-raised-button color="primary">Primary</button></div>'
     var COMPONENTS = [{'name': 'ApiComponent', 'selector': 'app-api'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'CodepenComponent', 'selector': 'app-codepen'},{'name': 'ComponentsComponent', 'selector': 'app-components'},{'name': 'DefualtAMButtonComponent', 'selector': 'app-defualt-ambutton'},{'name': 'DefualtAMMenuListComponent', 'selector': 'app-defualt-ammenu-list'},{'name': 'DemoComponent', 'selector': 'app-demo'},{'name': 'DescriptionComponent', 'selector': 'app-description'},{'name': 'FooterComponent', 'selector': 'app-footer'},{'name': 'HeaderComponent', 'selector': 'app-header'},{'name': 'MainComponent', 'selector': 'app-main'},{'name': 'OverviewComponent', 'selector': 'app-overview'},{'name': 'TaviscaButtonComponent', 'selector': 'enl-tavisca-button'}];
     var DIRECTIVES = [{'name': 'ComponentLoaderDirective', 'selector': '[appComponentLoader]'}];
-    var ACTUAL_COMPONENT = {'name': 'CodepenComponent'};
+    var ACTUAL_COMPONENT = {'name': 'DefualtAMButtonComponent'};
 </script>
 <script src="../js/tree.js"></script>
 
@@ -409,7 +309,7 @@ export class CodepenComponent implements OnInit {
        <script>
             var COMPODOC_CURRENT_PAGE_DEPTH = 1;
             var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
-            var COMPODOC_CURRENT_PAGE_URL = 'CodepenComponent.html';
+            var COMPODOC_CURRENT_PAGE_URL = 'DefualtAMButtonComponent.html';
        </script>
 
        <script src="../js/libs/custom-elements.min.js"></script>
